@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
+import Img from 'gatsby-image'
 
 export const ProductPageTemplate = ({
   image,
@@ -59,7 +60,7 @@ export const ProductPageTemplate = ({
                   <div className="tile">
                     <div className="tile is-parent is-vertical">
                       <article className="tile is-child">
-                        <img
+                        <Img
                           style={{ borderRadius: '5px' }}
                           src={main.image1.image}
                           alt={main.image1.alt}
@@ -68,7 +69,7 @@ export const ProductPageTemplate = ({
                     </div>
                     <div className="tile is-parent">
                       <article className="tile is-child">
-                        <img
+                        <Img
                           style={{ borderRadius: '5px' }}
                           src={main.image2.image}
                           alt={main.image2.alt}
@@ -78,7 +79,7 @@ export const ProductPageTemplate = ({
                   </div>
                   <div className="tile is-parent">
                     <article className="tile is-child">
-                      <img
+                      <Img
                         style={{ borderRadius: '5px' }}
                         src={main.image3.image}
                         alt={main.image3.alt}
